@@ -1,0 +1,290 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  .font-custom {
+    font-family: 'Roboto', sans-serif;/* Substitua 'MinhaFonte' pelo nome da sua fonte personalizada */
+  }
+}
+
+.nav-btn {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: none; /* Remove the default border */
+  border-radius: 9999px; /* Make the button round */
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  outline: none;
+  position: relative; /* Required for positioning the pseudo-element */
+  z-index: 1; /* Ensure the button content is above the pseudo-element */
+}
+
+.nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#1F398F, #6FC3D8);
+  border-radius: inherit; /* Inherit the border-radius from the button */
+  z-index: -1; /* Place the pseudo-element below the button content */
+}
+
+.nav-btn:hover::before {
+  background: linear-gradient(#6FC3D8, #1F398F);
+}
+
+
+/* Efeito no hover */
+.nav-btn:hover {
+  background-color: #1F398F;
+  color: white;
+}
+
+.custom {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: none; /* Remove the default border */
+  border-radius: 9999px; /* Make the button round */
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  outline: none;
+  position: relative; /* Required for positioning the pseudo-element */
+  z-index: 1; /* Ensure the button content is above the pseudo-element */
+  margin-top: 70px;
+}
+
+.custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#1F398F, #6FC3D8);
+  border-radius: inherit; /* Inherit the border-radius from the button */
+  z-index: -1; /* Place the pseudo-element below the button content */
+}
+
+.custom:hover::before {
+  background: linear-gradient(#6FC3D8, #1F398F);
+}
+
+.icon {
+  width: 100px; /* Defina a largura desejada */
+  height: 100px; /* Defina a altura desejada */
+  object-fit: contain; /* Isso garante que a imagem seja redimensionada corretamente */
+}
+
+
+.text-h1 {
+  font-weight: bold;
+  font-size: 2em; /* Adjust as needed */
+  background: linear-gradient(#1F398F, #6FC3D8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.btn-green {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: none; /* Remove the default border */
+  border-radius: 9999px; /* Make the button round */
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  outline: none;
+  position: relative; /* Required for positioning the pseudo-element */
+  z-index: 1; /* Ensure the button content is above the pseudo-element */
+}
+
+.btn-green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(#1F398F, #6FC3D8);
+  border-radius: inherit; /* Inherit the border-radius from the button */
+  z-index: -1; /* Place the pseudo-element below the button content */
+}
+
+.btn-green:hover::before {
+  background: linear-gradient(#6FC3D8, #1F398F);
+}
+
+
+/* Estilos para a div de sobreposição */
+.overlay-container {
+  position: relative; /* Importante para o posicionamento absoluto da sobreposição */
+}
+
+.overlay {
+  position: absolute;
+  bottom: -300px; /* Desloca um pouco para baixo */
+  left: 50%;
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  box-shadow: 0px 16px 16px -8px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Estilos para o conteúdo da div de sobreposição */
+.overlay-content {
+  /* Seus estilos para o conteúdo de sobreposição, como ícones e textos */
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+background: var(--gradient-green, linear-gradient(180deg, #1F398F 0%, #6FC3D8 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.paz{
+  height: 300px;
+  background: #F3F3F3;
+}
+
+.text{
+ 
+  color: #3D3D3D;
+
+/* Titulo */
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.text1{
+  color: #3F3F3F;
+
+/* Corpo */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+}
+
+
+.bg{
+flex-shrink: 0;
+  background: var(--foundation-blue-normal, #6FC3D8);
+}
+
+.img{
+
+flex-shrink: 0;
+  fill: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.cta{
+  background: var(--foundation-green-normal, #F8CB1B);
+}
+
+.texttour{
+  color: #F3F3F3;
+
+/* Corpo */
+font-family: Roboto;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+}
+
+.textp{
+  color: #F3F3F3;
+
+/* Corpo */
+margin-top: 40px;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+}
+
+.btn-blue{
+  color: white; 
+  background: linear-gradient(180deg, #1F398F 0%, #184D95 100%, #184D95 100%);
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #2864B6;
+  border-radius: 9999px; /* Deixa o botão redondo */
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+
+textpq{
+  color: var(--black, #3D3D3D);
+
+/* Titulo */
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+textes{
+  color: var(--black, #3D3D3D);
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+}
+
+.texto{
+  color: var(--foundation-orange-normal, #F47D03);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 150% */
+}
+
+.ctaimg{
+  background-image:url("../images/proximo\ projeto.\ Kangoo\ Digital.png");
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+}
+
+.textwhite{
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.investimento{
+  background: #F3F3F3;
+}
+
