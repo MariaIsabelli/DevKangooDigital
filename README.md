@@ -1,6 +1,6 @@
 # DevKangooDigital
 Desenvolvimento de Landing Page para Kangoo Digital agência de markting digital.
-<img src="https://github.com/MariaIsabelli/DevNinhoVerde2LP/blob/main/Group%2025.jpg"/>
+<img src="https://github.com/MariaIsabelli/DevKangooDigital/blob/main/Kangoo%20Digital%20Desing.png"/>
 
 Este projeto consiste em uma Landing Page desenvolvida utilizando HTML, CSS, JavaScript e Tailwind CSS, projetada especificamente para empresa Kangoo Digital agência de markting digital. O objetivo principal desta página é melhorar o SEO (Search Engine Optimization) da empresa, proporcionando uma presença online mais robusta e uma melhor classificação nos resultados de pesquisa.
 
